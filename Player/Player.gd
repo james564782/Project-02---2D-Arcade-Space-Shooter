@@ -98,8 +98,8 @@ func calculate_steering(delta):
 
 func damage(d):
 	health -= d
-	Global.updateHealth(health / maxHealth)
-	if health <= 0:
+	Global.updateHealth(Global.health - (d / maxHealth))
+	if Global.health <= 0:
 		Effects = get_node_or_null("/root/Game/Effects")
 		if Effects != null:
 			var explosion = Explosion.instance()
