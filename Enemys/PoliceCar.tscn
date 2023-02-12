@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/PoliceCar.png" type="Texture" id=1]
+[ext_resource path="res://Enemys/PoliceCar.gd" type="Script" id=2]
+
+[node name="PoliceCar" type="KinematicBody2D"]
+collision_layer = 0
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+z_index = 1
+texture = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 11, -12, 12, -12, 12, -11, 24, -11, 24, -10, 25, -10, 25, -9, 26, -9, 26, -7, 27, -7, 27, 7, 26, 7, 26, 9, 25, 9, 25, 10, 24, 10, 24, 11, 12, 11, 12, 12, 11, 12, 11, 13, 10, 13, 10, 12, 9, 12, 9, 11, -24, 11, -24, 10, -25, 10, -25, 9, -26, 9, -26, 7, -27, 7, -27, -7, -26, -7, -26, -9, -25, -9, -25, -10, -24, -10, -24, -11, 9, -11, 9, -12, 10, -12, 10, -13, 11, -13 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+scale = Vector2( 0.9, 0.9 )
+polygon = PoolVector2Array( 0, -11, 24, -11, 27, -7, 27, 7, 24, 11, -24, 11, -27, 7, -27, -7, -24, -11 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
