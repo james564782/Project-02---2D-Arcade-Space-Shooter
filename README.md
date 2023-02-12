@@ -3,7 +3,7 @@ Project for MSCH-C220
 
 All sprites except for the explosion animation were created by me. 
 
-##To play
+## To play
 
 This game features a car with a gun mounted on the front. See how long you can evade the police and avoid crashing into rocks. The car is controlled using WASD keys. Holding down space fires the gun. Pressing escape will open the pause menu. By defeating police and destroying rocks you are able to regain health. Every thirty seconds the total number of police will increase. If you fire the weapon for too long the rate of fire will decrease.
 
