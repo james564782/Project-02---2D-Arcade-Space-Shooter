@@ -5,7 +5,7 @@ Description
 ## Implementation
 Created using [Godot 3.5.1](https://godotengine.org/download)
 ## References
-[CAR STEERING, a tutorial by KidsCanCode](http://kidscancode.org/godot_recipes/3.x/2d/car_steering/)
+[Car Steering, a tutorial by KidsCanCode](http://kidscancode.org/godot_recipes/3.x/2d/car_steering/)
 ## Future Development
 None
 ## Created by
